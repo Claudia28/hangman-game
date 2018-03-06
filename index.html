@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HangMan</title>
+    <!-- Reset -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+   
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Cartoon 90's Hangman Game</h1>
+            <p><br>Guess the correct 90's Cartoons.<br> Press any key to get started.</p>
+        </div>
+        <!-- how do i center this image-->
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/4f/d1/40/4fd140478059ce1d2d1225f241cb7e71.jpg" alt="Image result for 90s cartoons collage wallpaper white backgrond" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="628" height="353" style="margin-top: 100px;">/>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Word to guess</h3>
+            </div>
+            <div class="panel-body">
+                <div id="wordToGuess">
+                    <h2> _ _ _ _ _ _ _</h2>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Wrong Guesses: <span id="wrongGuesses"></span>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Guesses Left: <span id="numGuesses"></span>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Win Counter: <span id="winCounter"></span>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Loss Counter: <span id="lossCounter"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/hangman.js"></script>
+</body>
+
+</html>
